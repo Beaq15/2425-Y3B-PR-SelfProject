@@ -1,7 +1,64 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTD_IsWieldingSword.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|solutionrelative:Source\\SmartEnemyAI\\BTD_IsWieldingSword.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\Enemy_Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|solutionrelative:Source\\SmartEnemyAI\\Enemy_Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTD_IsWieldingSword.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|solutionrelative:Source\\SmartEnemyAI\\BTD_IsWieldingSword.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\Enemy_Base.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|solutionrelative:Source\\SmartEnemyAI\\Enemy_Base.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTT_FocusTarget.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|solutionrelative:Source\\SmartEnemyAI\\BTT_FocusTarget.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTT_DefaultAttack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|solutionrelative:Source\\SmartEnemyAI\\BTT_DefaultAttack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTT_DefaultAttack.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|solutionrelative:Source\\SmartEnemyAI\\BTT_DefaultAttack.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTT_FocusTarget.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|solutionrelative:Source\\SmartEnemyAI\\BTT_FocusTarget.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\SmartEnemyAI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|solutionrelative:Source\\SmartEnemyAI\\SmartEnemyAI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\SmartEnemyAI.Build.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|solutionrelative:Source\\SmartEnemyAI\\SmartEnemyAI.Build.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\SmartEnemyAICharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|solutionrelative:Source\\SmartEnemyAI\\SmartEnemyAICharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\SmartEnemyAICharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4730F624-DE35-3A71-8FEE-20EC27EEBAFF}|Intermediate\\ProjectFiles\\SmartEnemyAI.vcxproj|solutionrelative:Source\\SmartEnemyAI\\SmartEnemyAICharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\Tasks\\BTT_ClearFocus.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\SmartEnemyAI\\Tasks\\BTT_ClearFocus.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\Tasks\\BTT_ClearFocus.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\SmartEnemyAI\\Tasks\\BTT_ClearFocus.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +66,181 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BTD_IsWieldingSword.cpp",
+              "DocumentMoniker": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTD_IsWieldingSword.cpp",
+              "RelativeDocumentMoniker": "Source\\SmartEnemyAI\\BTD_IsWieldingSword.cpp",
+              "ToolTip": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTD_IsWieldingSword.cpp",
+              "RelativeToolTip": "Source\\SmartEnemyAI\\BTD_IsWieldingSword.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-25T08:04:15.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BTD_IsWieldingSword.h",
+              "DocumentMoniker": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTD_IsWieldingSword.h",
+              "RelativeDocumentMoniker": "Source\\SmartEnemyAI\\BTD_IsWieldingSword.h",
+              "ToolTip": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTD_IsWieldingSword.h",
+              "RelativeToolTip": "Source\\SmartEnemyAI\\BTD_IsWieldingSword.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-25T08:04:14.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BTT_FocusTarget.h",
+              "DocumentMoniker": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTT_FocusTarget.h",
+              "RelativeDocumentMoniker": "Source\\SmartEnemyAI\\BTT_FocusTarget.h",
+              "ToolTip": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTT_FocusTarget.h",
+              "RelativeToolTip": "Source\\SmartEnemyAI\\BTT_FocusTarget.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-24T20:17:52.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BTT_DefaultAttack.cpp",
+              "DocumentMoniker": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTT_DefaultAttack.cpp",
+              "RelativeDocumentMoniker": "Source\\SmartEnemyAI\\BTT_DefaultAttack.cpp",
+              "ToolTip": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTT_DefaultAttack.cpp",
+              "RelativeToolTip": "Source\\SmartEnemyAI\\BTT_DefaultAttack.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-24T19:30:25.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BTT_DefaultAttack.h",
+              "DocumentMoniker": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTT_DefaultAttack.h",
+              "RelativeDocumentMoniker": "Source\\SmartEnemyAI\\BTT_DefaultAttack.h",
+              "ToolTip": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTT_DefaultAttack.h",
+              "RelativeToolTip": "Source\\SmartEnemyAI\\BTT_DefaultAttack.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-24T19:30:24.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Enemy_Base.h",
+              "DocumentMoniker": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\Enemy_Base.h",
+              "RelativeDocumentMoniker": "Source\\SmartEnemyAI\\Enemy_Base.h",
+              "ToolTip": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\Enemy_Base.h",
+              "RelativeToolTip": "Source\\SmartEnemyAI\\Enemy_Base.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-24T17:56:38.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Enemy_Base.cpp",
+              "DocumentMoniker": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\Enemy_Base.cpp",
+              "RelativeDocumentMoniker": "Source\\SmartEnemyAI\\Enemy_Base.cpp",
+              "ToolTip": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\Enemy_Base.cpp",
+              "RelativeToolTip": "Source\\SmartEnemyAI\\Enemy_Base.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-24T17:56:40.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BTT_ClearFocus.h",
+              "DocumentMoniker": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\Tasks\\BTT_ClearFocus.h",
+              "RelativeDocumentMoniker": "Source\\SmartEnemyAI\\Tasks\\BTT_ClearFocus.h",
+              "ToolTip": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\Tasks\\BTT_ClearFocus.h",
+              "RelativeToolTip": "Source\\SmartEnemyAI\\Tasks\\BTT_ClearFocus.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-25T06:50:00.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BTT_ClearFocus.cpp",
+              "DocumentMoniker": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\Tasks\\BTT_ClearFocus.cpp",
+              "RelativeDocumentMoniker": "Source\\SmartEnemyAI\\Tasks\\BTT_ClearFocus.cpp",
+              "ToolTip": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\Tasks\\BTT_ClearFocus.cpp",
+              "RelativeToolTip": "Source\\SmartEnemyAI\\Tasks\\BTT_ClearFocus.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-25T06:50:01.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BTT_FocusTarget.cpp",
+              "DocumentMoniker": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTT_FocusTarget.cpp",
+              "RelativeDocumentMoniker": "Source\\SmartEnemyAI\\BTT_FocusTarget.cpp",
+              "ToolTip": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\BTT_FocusTarget.cpp",
+              "RelativeToolTip": "Source\\SmartEnemyAI\\BTT_FocusTarget.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-24T20:17:53.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SmartEnemyAI.cpp",
+              "DocumentMoniker": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\SmartEnemyAI.cpp",
+              "RelativeDocumentMoniker": "Source\\SmartEnemyAI\\SmartEnemyAI.cpp",
+              "ToolTip": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\SmartEnemyAI.cpp",
+              "RelativeToolTip": "Source\\SmartEnemyAI\\SmartEnemyAI.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-25T06:47:08.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SmartEnemyAICharacter.h",
+              "DocumentMoniker": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\SmartEnemyAICharacter.h",
+              "RelativeDocumentMoniker": "Source\\SmartEnemyAI\\SmartEnemyAICharacter.h",
+              "ToolTip": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\SmartEnemyAICharacter.h",
+              "RelativeToolTip": "Source\\SmartEnemyAI\\SmartEnemyAICharacter.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-24T19:26:33.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SmartEnemyAICharacter.cpp",
+              "DocumentMoniker": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\SmartEnemyAICharacter.cpp",
+              "RelativeDocumentMoniker": "Source\\SmartEnemyAI\\SmartEnemyAICharacter.cpp",
+              "ToolTip": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\SmartEnemyAICharacter.cpp",
+              "RelativeToolTip": "Source\\SmartEnemyAI\\SmartEnemyAICharacter.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-24T18:04:48.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SmartEnemyAI.Build.cs",
+              "DocumentMoniker": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\SmartEnemyAI.Build.cs",
+              "RelativeDocumentMoniker": "Source\\SmartEnemyAI\\SmartEnemyAI.Build.cs",
+              "ToolTip": "C:\\Users\\beatr\\Documents\\GitHub\\2425-Y3B-PR-SelfProject\\SmartEnemyAI\\Source\\SmartEnemyAI\\SmartEnemyAI.Build.cs",
+              "RelativeToolTip": "Source\\SmartEnemyAI\\SmartEnemyAI.Build.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T18:22:35.15Z"
             }
           ]
         }

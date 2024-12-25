@@ -8,6 +8,6 @@ public class SmartEnemyAI : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "AIModule", "NavigationSystem", "GameplayTasks", "GameplayTags", "Engine", "InputCore", "EnhancedInput" });
 	}
 }
