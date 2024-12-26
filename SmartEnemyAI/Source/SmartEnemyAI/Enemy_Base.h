@@ -4,8 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "PatrolRoute.h"
 #include "Enemy_Base.generated.h"
 
+UENUM(BlueprintType)
+enum class EMovementSpeed : uint8
+{
+	EMS_Idle,
+	EMS_Walking,
+	EMS_Jogging,
+	EMS_Sprinting
+};
 UCLASS()
 class SMARTENEMYAI_API AEnemy_Base : public ACharacter
 {
@@ -19,9 +28,14 @@ public:
 
 	void Attack();
 	void WieldSword();
+	void SheathSword();
+	float SetMovementSpeed(EMovementSpeed Speed);
+	APatrolRoute* GetPatrolRoute();
 
 	bool IsWieldingSword;
 
+	UPROPERTY(EditInstanceOnly)
+	APatrolRoute* PatrolRoute;
 protected:
 	virtual void BeginPlay() override;
 };

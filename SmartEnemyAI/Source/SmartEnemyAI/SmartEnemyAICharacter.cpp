@@ -10,6 +10,10 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
+#include "EngineUtils.h"
+#include "Enemy_Base.h"
+#include "AIController.h"
+#include "AIC_Enemy_Base.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -86,6 +90,9 @@ void ASmartEnemyAICharacter::SetupPlayerInputComponent(UInputComponent* PlayerIn
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ASmartEnemyAICharacter::Look);
+
+		// Attacking
+		EnhancedInputComponent->BindAction(AttackAction, ETriggerEvent::Triggered, this, &ASmartEnemyAICharacter::Attack);
 	}
 	else
 	{
@@ -127,4 +134,29 @@ void ASmartEnemyAICharacter::Look(const FInputActionValue& Value)
 		AddControllerYawInput(LookAxisVector.X);
 		AddControllerPitchInput(LookAxisVector.Y);
 	}
+}
+
+void ASmartEnemyAICharacter::Attack(const FInputActionValue& Value)
+{
+	if (Controller != nullptr)
+	{
+		for (TActorIterator<AEnemy_Base> ActorItr(GetWorld()); ActorItr; ++ActorItr)
+		{
+			AEnemy_Base* Enemy = *ActorItr;
+			if (Enemy)
+			{
+				AAIC_Enemy_Base* EnemyController = Cast<AAIC_Enemy_Base>(Enemy->GetController());
+				if (EnemyController)
+				{
+					if (ToggleState)
+						EnemyController->SetStateAsAttacking(this);
+					else
+						EnemyController->SetStateAsPassive();
+				}
+				
+			}
+		}
+		ToggleState = !ToggleState;
+	}
+	
 }

@@ -2,6 +2,7 @@
 
 
 #include "Enemy_Base.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 // Sets default values
 AEnemy_Base::AEnemy_Base()
@@ -50,5 +51,45 @@ void AEnemy_Base::WieldSword()
 	}
 
 	IsWieldingSword = true;
+}
+
+void AEnemy_Base::SheathSword()
+{
+	float SheathSwordDuration = 2.0f;
+
+	if(GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, SheathSwordDuration, FColor::Blue, TEXT("Enemy is putting away sword"));
+	}
+	IsWieldingSword = false;
+}
+
+float AEnemy_Base::SetMovementSpeed(EMovementSpeed Speed)
+{
+
+	switch (Speed)
+	{
+	case EMovementSpeed::EMS_Idle:
+		GetCharacterMovement()->MaxWalkSpeed = 0;
+		break;
+	case EMovementSpeed::EMS_Walking:
+		GetCharacterMovement()->MaxWalkSpeed = 100;
+		break;
+	case EMovementSpeed::EMS_Jogging:
+		GetCharacterMovement()->MaxWalkSpeed = 300;
+		break;
+	case EMovementSpeed::EMS_Sprinting:
+		GetCharacterMovement()->MaxWalkSpeed = 500;
+		break;
+	default:
+		GetCharacterMovement()->MaxWalkSpeed = 0;
+	}
+
+	return GetCharacterMovement()->MaxWalkSpeed;
+}
+
+APatrolRoute* AEnemy_Base::GetPatrolRoute()
+{
+	return PatrolRoute;
 }
 
