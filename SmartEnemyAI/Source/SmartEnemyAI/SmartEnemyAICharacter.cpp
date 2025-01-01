@@ -14,6 +14,10 @@
 #include "Enemy_Base.h"
 #include "AIController.h"
 #include "AIC_Enemy_Base.h"
+#include "Perception/AISense_Hearing.h"
+#include "Perception/AISense_Damage.h"
+#include "Kismet/GameplayStatics.h"
+#include "GameFramework/DamageType.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -93,6 +97,12 @@ void ASmartEnemyAICharacter::SetupPlayerInputComponent(UInputComponent* PlayerIn
 
 		// Attacking
 		EnhancedInputComponent->BindAction(AttackAction, ETriggerEvent::Triggered, this, &ASmartEnemyAICharacter::Attack);
+
+		// MakinhNoise
+		EnhancedInputComponent->BindAction(MakeNoiseAction, ETriggerEvent::Triggered, this, &ASmartEnemyAICharacter::MakeNoise);
+
+		// DamagingEnemy
+		EnhancedInputComponent->BindAction(DamageEnemyAction, ETriggerEvent::Triggered, this, &ASmartEnemyAICharacter::DamageEnemy);
 	}
 	else
 	{
@@ -159,4 +169,26 @@ void ASmartEnemyAICharacter::Attack(const FInputActionValue& Value)
 		ToggleState = !ToggleState;
 	}
 	
+}
+
+void ASmartEnemyAICharacter::MakeNoise(const FInputActionValue& Value)
+{
+	UAISense_Hearing::ReportNoiseEvent(GetWorld(), GetActorLocation(), 1, this, 2);
+	if (GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Blue, TEXT("Player is making noise"));
+	}
+}
+
+void ASmartEnemyAICharacter::DamageEnemy(const FInputActionValue& Value)
+{
+	AActor* Enemy = UGameplayStatics::GetActorOfClass(GetWorld(), AEnemy_Base::StaticClass());
+	if (Enemy)
+	{  
+		UAISense_Damage::ReportDamageEvent(GetWorld(), Enemy, this, 10.0f, GetActorLocation(), Enemy->GetActorLocation());
+		if (GEngine)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Blue, TEXT("Enemy is taking damage"));
+		}
+	}
 }

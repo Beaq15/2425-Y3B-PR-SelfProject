@@ -46,6 +46,12 @@ class ASmartEnemyAICharacter : public ACharacter
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* AttackAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* MakeNoiseAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* DamageEnemyAction;
 public:
 	ASmartEnemyAICharacter();
 	
@@ -59,6 +65,10 @@ protected:
 	void Look(const FInputActionValue& Value);
 			
 	void Attack(const FInputActionValue& Value);
+
+	void MakeNoise(const FInputActionValue& Value);
+
+	void DamageEnemy(const FInputActionValue& Value);
 
 	bool ToggleState = false;
 protected:
