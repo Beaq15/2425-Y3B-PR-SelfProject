@@ -9,7 +9,7 @@ AEnemy_Base::AEnemy_Base()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	BehaviorTree = CreateDefaultSubobject<UBehaviorTree>(TEXT("BehaviorTree"));
 }
 
 // Called when the game starts or when spawned
@@ -35,33 +35,14 @@ void AEnemy_Base::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 void AEnemy_Base::Attack()
 {
-	float MontageDuration = 2.0f;
-	if (GEngine)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, MontageDuration, FColor::Blue, TEXT("Enemy is attacking with default attack"));
-	}
 }
 
-void AEnemy_Base::WieldSword()
+void AEnemy_Base::EquipWeapon()
 {
-	float WieldSwordDuration = 2.0f;
-	if (GEngine)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, WieldSwordDuration, FColor::Blue, TEXT("Enemy is wielding sword"));
-	}
-
-	IsWieldingSword = true;
 }
 
-void AEnemy_Base::SheathSword()
+void AEnemy_Base::UnequipWeapon()
 {
-	float SheathSwordDuration = 2.0f;
-
-	if(GEngine)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, SheathSwordDuration, FColor::Blue, TEXT("Enemy is putting away sword"));
-	}
-	IsWieldingSword = false;
 }
 
 float AEnemy_Base::SetMovementSpeed(EMovementSpeed Speed)

@@ -11,7 +11,7 @@ bool UBTD_IsWieldingSword::CalculateRawConditionValue(UBehaviorTreeComponent& Ow
     if (AIController)
     {
         AEnemy_Base* Enemy = Cast<AEnemy_Base>(AIController->GetPawn());
-        if (Enemy && Enemy->IsWieldingSword)
+        if (Enemy && Enemy->IsWieldingWeapon)
         {
             return true; 
         }

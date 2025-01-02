@@ -8,6 +8,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/Actor.h"
 #include "GameFramework/Character.h"
+#include "Enemy_Base.h"
 
 AAIC_Enemy_Base::AAIC_Enemy_Base()
 {
@@ -74,14 +75,16 @@ void AAIC_Enemy_Base::OnPossess(APawn* InPawn)
 {
 	Super::OnPossess(InPawn);
 
-	if (BehaviorTreeAsset)
-	{
-		BlackboardComp->InitializeBlackboard(*BehaviorTreeAsset->BlackboardAsset);
-		BehaviorComp->StartTree(*BehaviorTreeAsset);
-		SetStateAsPassive();
-		BlackboardComp->SetValueAsFloat(AttackRadiusKeyName, 50.0f);
-		BlackboardComp->SetValueAsFloat(DefendRadiusKeyName, 350.0f);
-	}
+		AEnemy_Base* Enemy = Cast<AEnemy_Base>(InPawn);
+		if (Enemy && Enemy->BehaviorTree)
+		{
+			BlackboardComp->InitializeBlackboard(*Enemy->BehaviorTree->BlackboardAsset);
+			BehaviorComp->StartTree(*Enemy->BehaviorTree);
+			SetStateAsPassive();
+			BlackboardComp->SetValueAsFloat(AttackRadiusKeyName, 50.0f);
+			BlackboardComp->SetValueAsFloat(DefendRadiusKeyName, 350.0f);
+
+		}
 
 }
 

@@ -62,9 +62,6 @@ protected:
 	UFUNCTION(BlueprintCallable)
 	int GetCurrentState();
 
-	UPROPERTY(EditDefaultsOnly, Category = "AI")
-	UBehaviorTree* BehaviorTreeAsset;
-
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
 	UBehaviorTreeComponent* BehaviorComp;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")

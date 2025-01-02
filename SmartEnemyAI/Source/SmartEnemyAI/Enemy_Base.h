@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "PatrolRoute.h"
+#include "BehaviorTree/BehaviorTree.h"
 #include "Enemy_Base.generated.h"
 
 UENUM(BlueprintType)
@@ -25,17 +26,19 @@ public:
 	AEnemy_Base();
 	virtual void Tick(float DeltaTime) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-	void Attack();
-	void WieldSword();
-	void SheathSword();
+	virtual void Attack();
+	virtual void EquipWeapon();
+	virtual void UnequipWeapon();
 	float SetMovementSpeed(EMovementSpeed Speed);
 	APatrolRoute* GetPatrolRoute();
 
-	bool IsWieldingSword;
+	bool IsWieldingWeapon;
 
 	UPROPERTY(EditInstanceOnly)
 	APatrolRoute* PatrolRoute;
+
+	UPROPERTY(EditDefaultsOnly, Category = "AI")
+	UBehaviorTree* BehaviorTree;
 protected:
 	virtual void BeginPlay() override;
 };
