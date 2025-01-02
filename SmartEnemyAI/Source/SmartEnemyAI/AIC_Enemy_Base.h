@@ -39,6 +39,9 @@ public:
 	void SetStateAsPassive();
 	void SetStateAsAttacking(AActor* AttackTarget);
 	void SetStateAsInvestigating(FVector Location);
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	AActor* AttackTargetVariable;
 protected:
 
 	virtual void OnPossess(APawn* InPawn) override;
@@ -73,6 +76,10 @@ protected:
 	FName AttackTargetKeyName;
 	FName StateKeyName;
 	FName PointOfInterestKeyName;
+	FName AttackRadiusKeyName;
+	FName DefendRadiusKeyName;
+
+	
 
 	UClass* GetSenseClass(EAISense Sense);
 };

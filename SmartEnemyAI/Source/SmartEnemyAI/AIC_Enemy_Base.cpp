@@ -47,6 +47,8 @@ AAIC_Enemy_Base::AAIC_Enemy_Base()
 	AttackTargetKeyName = TEXT("AttackTarget");
 	StateKeyName = TEXT("State");
 	PointOfInterestKeyName = TEXT("PointOfInterest");
+	AttackRadiusKeyName = TEXT("AttackRadius");
+	DefendRadiusKeyName = TEXT("DefendRadius");
 }
 
 void AAIC_Enemy_Base::SetStateAsPassive()
@@ -58,6 +60,8 @@ void AAIC_Enemy_Base::SetStateAsAttacking(AActor* AttackTarget)
 {
 	BlackboardComp->SetValueAsObject(AttackTargetKeyName, AttackTarget);
 	BlackboardComp->SetValueAsInt(StateKeyName, 1);
+
+	AttackTargetVariable = AttackTarget;
 }
 
 void AAIC_Enemy_Base::SetStateAsInvestigating(FVector Location)
@@ -75,6 +79,8 @@ void AAIC_Enemy_Base::OnPossess(APawn* InPawn)
 		BlackboardComp->InitializeBlackboard(*BehaviorTreeAsset->BlackboardAsset);
 		BehaviorComp->StartTree(*BehaviorTreeAsset);
 		SetStateAsPassive();
+		BlackboardComp->SetValueAsFloat(AttackRadiusKeyName, 50.0f);
+		BlackboardComp->SetValueAsFloat(DefendRadiusKeyName, 350.0f);
 	}
 
 }

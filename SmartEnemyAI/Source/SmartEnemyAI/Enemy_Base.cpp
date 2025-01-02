@@ -93,3 +93,4 @@ APatrolRoute* AEnemy_Base::GetPatrolRoute()
 	return PatrolRoute;
 }
 
+
