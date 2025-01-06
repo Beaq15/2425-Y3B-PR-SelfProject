@@ -76,7 +76,5 @@ protected:
 	FName AttackRadiusKeyName;
 	FName DefendRadiusKeyName;
 
-	
-
 	UClass* GetSenseClass(EAISense Sense);
 };

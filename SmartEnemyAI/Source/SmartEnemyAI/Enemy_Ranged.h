@@ -16,4 +16,7 @@ class SMARTENEMYAI_API AEnemy_Ranged : public AEnemy_Base
 protected:
 	virtual void BeginPlay();
 	virtual void EquipWeapon() override;
+	virtual float SetMovementSpeed(EMovementSpeed Speed) override;
+	virtual void GetIdealRange(float& AttackRadius, float& DefendRadius) override;
+	virtual void Attack() override;
 };

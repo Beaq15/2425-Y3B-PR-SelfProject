@@ -80,9 +80,12 @@ void AAIC_Enemy_Base::OnPossess(APawn* InPawn)
 		{
 			BlackboardComp->InitializeBlackboard(*Enemy->BehaviorTree->BlackboardAsset);
 			BehaviorComp->StartTree(*Enemy->BehaviorTree);
-			SetStateAsPassive();
-			BlackboardComp->SetValueAsFloat(AttackRadiusKeyName, 50.0f);
-			BlackboardComp->SetValueAsFloat(DefendRadiusKeyName, 350.0f);
+			SetStateAsAttacking(Enemy);
+			float AttackRadius = 0.0f;
+			float DefendRadius = 0.0f;
+			Enemy->GetIdealRange(AttackRadius, DefendRadius);
+			BlackboardComp->SetValueAsFloat(AttackRadiusKeyName,AttackRadius);
+			BlackboardComp->SetValueAsFloat(DefendRadiusKeyName, DefendRadius);
 
 		}
 

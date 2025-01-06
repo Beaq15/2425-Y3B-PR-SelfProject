@@ -29,11 +29,19 @@ public:
 	virtual void Attack();
 	virtual void EquipWeapon();
 	virtual void UnequipWeapon();
-	float SetMovementSpeed(EMovementSpeed Speed);
+	virtual float SetMovementSpeed(EMovementSpeed Speed);
 	APatrolRoute* GetPatrolRoute();
+	virtual void GetIdealRange(float& AttackRadius, float& DefendRadius);
 
+	void Heal(float HealPercentage);
 	bool IsWieldingWeapon;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	float MaxHealth;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	float Health;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	bool IsDead;
 	UPROPERTY(EditInstanceOnly)
 	APatrolRoute* PatrolRoute;
 

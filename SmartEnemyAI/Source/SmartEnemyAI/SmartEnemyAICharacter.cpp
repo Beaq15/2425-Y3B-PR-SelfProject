@@ -186,9 +186,6 @@ void ASmartEnemyAICharacter::DamageEnemy(const FInputActionValue& Value)
 	if (Enemy)
 	{  
 		UAISense_Damage::ReportDamageEvent(GetWorld(), Enemy, this, 10.0f, GetActorLocation(), Enemy->GetActorLocation());
-		if (GEngine)
-		{
-			GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Blue, TEXT("Enemy is taking damage"));
-		}
+		UGameplayStatics::ApplyDamage(Enemy, 20.0f, nullptr, this, UDamageType::StaticClass());
 	}
 }

@@ -3,6 +3,7 @@
 
 #include "Enemy_Base.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include <algorithm>
 
 // Sets default values
 AEnemy_Base::AEnemy_Base()
@@ -10,6 +11,10 @@ AEnemy_Base::AEnemy_Base()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	BehaviorTree = CreateDefaultSubobject<UBehaviorTree>(TEXT("BehaviorTree"));
+
+	MaxHealth = 100.0f;
+	Health = 100.0f;
+	IsDead = false;
 }
 
 // Called when the game starts or when spawned
@@ -47,7 +52,6 @@ void AEnemy_Base::UnequipWeapon()
 
 float AEnemy_Base::SetMovementSpeed(EMovementSpeed Speed)
 {
-
 	switch (Speed)
 	{
 	case EMovementSpeed::EMS_Idle:
@@ -72,6 +76,18 @@ float AEnemy_Base::SetMovementSpeed(EMovementSpeed Speed)
 APatrolRoute* AEnemy_Base::GetPatrolRoute()
 {
 	return PatrolRoute;
+}
+
+void AEnemy_Base::GetIdealRange(float& AttackRadius, float& DefendRadius)
+{
+	AttackRadius = 50.0f;
+	DefendRadius = 350.0f;
+}
+
+void AEnemy_Base::Heal(float HealPercentage)
+{
+	float Clamp = HealPercentage * MaxHealth;
+	Health += std::clamp(Clamp, 0.0f, MaxHealth);
 }
 
 
