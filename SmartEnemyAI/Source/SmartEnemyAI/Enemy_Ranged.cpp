@@ -10,6 +10,7 @@
 
 void AEnemy_Ranged::BeginPlay()
 {
+	Super::BeginPlay();
 	EquipWeapon();
 }
 

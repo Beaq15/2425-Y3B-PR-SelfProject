@@ -42,7 +42,7 @@ public:
 	float Health;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	bool IsDead;
-	UPROPERTY(EditInstanceOnly)
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	APatrolRoute* PatrolRoute;
 
 	UPROPERTY(EditDefaultsOnly, Category = "AI")

@@ -19,7 +19,10 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	USplineComponent* SplineComponent;
 
+	UFUNCTION(BlueprintCallable)
 	void IncrementPatrolRoute();
+
+	UFUNCTION(BlueprintCallable)
 	FVector GetSplinePointAsWorldPosition();
 
 	int PatrolIndex;

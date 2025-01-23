@@ -9,6 +9,7 @@
 #include "GameFramework/Actor.h"
 #include "GameFramework/Character.h"
 #include "Enemy_Base.h"
+#include "SmartEnemyAICharacter.h"
 
 AAIC_Enemy_Base::AAIC_Enemy_Base()
 {
@@ -74,13 +75,12 @@ void AAIC_Enemy_Base::SetStateAsInvestigating(FVector Location)
 void AAIC_Enemy_Base::OnPossess(APawn* InPawn)
 {
 	Super::OnPossess(InPawn);
-
 		AEnemy_Base* Enemy = Cast<AEnemy_Base>(InPawn);
 		if (Enemy && Enemy->BehaviorTree)
 		{
 			BlackboardComp->InitializeBlackboard(*Enemy->BehaviorTree->BlackboardAsset);
 			BehaviorComp->StartTree(*Enemy->BehaviorTree);
-			SetStateAsAttacking(Enemy);
+			SetStateAsPassive();
 			float AttackRadius = 0.0f;
 			float DefendRadius = 0.0f;
 			Enemy->GetIdealRange(AttackRadius, DefendRadius);
