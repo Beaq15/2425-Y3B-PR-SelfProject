@@ -9,7 +9,7 @@
 
 EBTNodeResult::Type UBTT_MoveAlongPatrolRoute::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
-	AAIController* AIController = OwnerComp.GetAIOwner();
+	/*AAIController* AIController = OwnerComp.GetAIOwner();
 	if (!AIController)
 	{
 		return EBTNodeResult::Failed;
@@ -22,7 +22,7 @@ EBTNodeResult::Type UBTT_MoveAlongPatrolRoute::ExecuteTask(UBehaviorTreeComponen
 
 	FVector Destination = Enemy->GetPatrolRoute()->GetSplinePointAsWorldPosition();
 	AIController->MoveToLocation(Destination, 10.0f, false);
-	Enemy->GetPatrolRoute()->IncrementPatrolRoute();
+	Enemy->GetPatrolRoute()->IncrementPatrolRoute();*/
 	return EBTNodeResult::Succeeded;
 }
 

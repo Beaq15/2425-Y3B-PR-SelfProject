@@ -30,7 +30,7 @@ public:
 	virtual void EquipWeapon();
 	virtual void UnequipWeapon();
 	virtual float SetMovementSpeed(EMovementSpeed Speed);
-	APatrolRoute* GetPatrolRoute();
+	//APatrolRoute* GetPatrolRoute();
 	virtual void GetIdealRange(float& AttackRadius, float& DefendRadius);
 
 	void Heal(float HealPercentage);
@@ -42,7 +42,7 @@ public:
 	float Health;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	bool IsDead;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	APatrolRoute* PatrolRoute;
 
 	UPROPERTY(EditDefaultsOnly, Category = "AI")

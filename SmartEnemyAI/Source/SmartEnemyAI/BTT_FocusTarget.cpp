@@ -17,10 +17,14 @@ EBTNodeResult::Type UBTT_FocusTarget::ExecuteTask(UBehaviorTreeComponent& OwnerC
         return EBTNodeResult::Failed;
     }
 
-    AActor* TargetActor = Cast<AActor>(BlackboardComp->GetValueAsObject(AttackTargetKey.SelectedKeyName));
+    AActor* TargetActor = Cast<AActor>(BlackboardComp->GetValueAsObject(FocusTargetKey.SelectedKeyName));
+    FVector TargetLocation = BlackboardComp->GetValueAsVector(FocusTargetKey.SelectedKeyName);
     if (!TargetActor)
     {
-        return EBTNodeResult::Failed;
+        if (!TargetLocation.IsZero())
+        {
+            AIController->SetFocalPoint(TargetLocation);
+        }
     }
 
     AIController->SetFocus(TargetActor);

@@ -73,10 +73,10 @@ float AEnemy_Base::SetMovementSpeed(EMovementSpeed Speed)
 	return GetCharacterMovement()->MaxWalkSpeed;
 }
 
-APatrolRoute* AEnemy_Base::GetPatrolRoute()
-{
-	return PatrolRoute;
-}
+//APatrolRoute* AEnemy_Base::GetPatrolRoute()
+//{
+//	return PatrolRoute;
+//}
 
 void AEnemy_Base::GetIdealRange(float& AttackRadius, float& DefendRadius)
 {

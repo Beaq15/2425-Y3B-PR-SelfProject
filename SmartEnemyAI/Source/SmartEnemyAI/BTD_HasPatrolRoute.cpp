@@ -8,7 +8,7 @@
 bool UBTD_HasPatrolRoute::CalculateRawConditionValue(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) const
 {
 	AEnemy_Base* Enemy = Cast<AEnemy_Base>(OwnerComp.GetAIOwner()->GetPawn());
-	if (Enemy->GetPatrolRoute())
+	if (Enemy->PatrolRoute)
 		return true;
 
 	return false;
